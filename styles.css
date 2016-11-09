@@ -2,6 +2,7 @@
 
 body{
   background: #F2D00D;
+  font-family: 'Andada', serif;
 }
 .container-fluid{
   padding: 0;
@@ -12,9 +13,19 @@ body{
 .logo{
   font-size: 500%;
   font-weight: bold;
-  color: white;
-  padding: 50px 0 50px 10%;
+  color: #240f09;
+  padding: 10px 0 10px 10%;
   font-family: 'Audiowide', cursive;
+  text-align: center;
+  position: relative;
+  left: -64px;
+  cursor: pointer;
+}
+
+.logo img{
+  width: 128px;
+  position: relative;
+  top: -10px;
 }
 
 .nav-bar-block{
@@ -38,6 +49,7 @@ body{
   width: 20%;
   text-align: center;
   transition: .4s;
+  font-size: 125%;
 }
 
 .nav-bar-block ul li:hover{
@@ -52,6 +64,7 @@ body{
   color: white;
   font-weight: bold;
   transition: .3s;
+  text-transform: uppercase;
 }
 
 .active{
@@ -82,12 +95,23 @@ body{
   width: 80%;
   margin: auto;
   margin-bottom: 50px;
-  padding: 20px;
+  padding: 20px 60px;
   background: white;
   border-radius: 10px;
   box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.6);
+  font-size: 150%;
+  line-height: 2;
 }
 
+.logo-block{
+  text-align: center;
+}
+
+.logo-image{
+  width: 12%;
+  margin: 0 2%;
+  /*border: 1px dashed red;*/
+}
 
 #map{
   height: 300px;

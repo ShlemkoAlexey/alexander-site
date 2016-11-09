@@ -1,19 +1,19 @@
 var map;
-var myLatLng = {lat: -25.363, lng: 131.044};
+var myLatLng = {lat: 51.109772, lng: 17.036150};
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: myLatLng,
-    zoom: 4
+    zoom: 16
   });
 
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: 'This is our location!'
+    title: 'Jesteśmy tutaj.'
   });
 
   var contentString = '<div id="content">'+
-  'this is our location'+
+  '<p>Wrocław</p> <p>Wita Stwosza 12A</p> <p>tel: 607-445-224</p> <p>mobidocwroclaw@gmail.com</p>'+
   '</div>';
 
   var infowindow = new google.maps.InfoWindow({
@@ -28,5 +28,9 @@ function initMap() {
 
 $(".slider-block").slick({
   autoplay: true,
-  arrows: false
+  arrows: false,
+  autoplaySpeed: 2000,
+  draggable: false,
+  fade: true,
+  pauseOnFocus: false
 });
