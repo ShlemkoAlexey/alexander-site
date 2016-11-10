@@ -1,4 +1,0 @@
-1.strona glowna
-2.cennik
-3.O NAS
-4.kontakt
